@@ -4,4 +4,11 @@
     <string name="hello_message">你好，世界!</string>
     <string name="ButtonText">我是一个按钮</string>
     <string name="Login">登陆</string>
+    <string name="LogInName"></string>
+    <string name="passWord">密码</string>
+    <string name="passWordText"></string>
+    <string name="radioButton">单选按钮</string>
+    <string name="checkBox">复选框</string>
+    <string name="Switch">这是干什么的?</string>
+    <string name="imageButton"></string>
 </resources>
