@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.jingmail.suli.androidlabs.ListItemActivity"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:layout_columnWeight="1"
+    android:layout_gravity="fill">
+
+    <RadioButton
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:text="@string/radioButton" />
+
+    <CheckBox
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:text="@string/checkBox" />
+
+    <Switch
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:text="@string/Switch" />
+
+
+    <ImageButton
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_camera"
+        android:text="@string/radioButton"
+        android:visibility="visible" />
+
+</GridLayout>
