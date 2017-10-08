@@ -29,6 +29,16 @@ public class StartActivity extends Activity {
                 startActivityForResult(intent, 10);
             }
         });
+
+        final Button button2 = (Button)findViewById(R.id.button2);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view){
+                Log.i(ACTIVITY_NAME,"User clicked Start Chat");
+                Intent intent = new Intent(StartActivity.this,ChatWindow.class);
+                startActivity(intent);
+            }
+        });
     }
 
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
@@ -65,5 +75,6 @@ public class StartActivity extends Activity {
     protected void onDestroy(){
         super.onDestroy();
         Log.i(ACTIVITY_NAME,"In onDestroy()");
+
     }
 }

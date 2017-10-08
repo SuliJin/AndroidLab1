@@ -9,9 +9,12 @@
     <string name="radioButton">RadioButton</string>
     <string name="checkBox">CheckBox</string>
     <string name="Switch">What does this do?</string>
-  //  <string name="imageButton" />
+    //
+    <string name="imageButton" />
     <string name="dialog_message">Do you want to finish the activity</string>
     <string name="dialog_title">Warning!</string>
     <string name="ok">YES</string>
     <string name="cancel">NO</string>
+    <string name="Button2Text">Start Chat</string>
+    <string name="sendButton">Send</string>
 </resources>
