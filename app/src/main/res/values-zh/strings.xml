@@ -11,4 +11,8 @@
     <string name="checkBox">复选框</string>
     <string name="Switch">这是干什么的?</string>
     <string name="imageButton"></string>
+    <string name="dialog_message">你确认要返回吗？</string>
+    <string name="dialog_title">警告</string>
+    <string name="ok">是</string>
+    <string name="cancel">否</string>
 </resources>
