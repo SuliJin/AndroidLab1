@@ -39,6 +39,16 @@ public class StartActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        final Button weatherButton = (Button)findViewById(R.id.weatherButton);
+
+        weatherButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view){
+                Log.i(ACTIVITY_NAME,"User clicked Weather Forecast Button");
+                Intent intent = new Intent(StartActivity.this,WeatherForecast.class);
+                startActivity(intent);
+            }
+        });
     }
 
     protected void onActivityResult(int requestCode, int responseCode, Intent data){
