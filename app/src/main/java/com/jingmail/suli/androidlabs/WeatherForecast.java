@@ -93,11 +93,11 @@ public class WeatherForecast extends Activity {
 
                         case XmlPullParser.START_TAG:
                             if (name.equalsIgnoreCase("temperature")) {
-                                currentTemperature = parser.getAttributeValue(null, "value");
+                                currentTemperature = "Current Temperature: " + parser.getAttributeValue(null, "value") + "°C";
                                 this.publishProgress(25);
-                                minTemperature = parser.getAttributeValue(null, "min");
+                                minTemperature = "Minimum Temperature: " + parser.getAttributeValue(null, "min")+ "°C";
                                 this.publishProgress(50);
-                                maxTemperature = parser.getAttributeValue(null, "max");
+                                maxTemperature = "Maximum Temperature: " + parser.getAttributeValue(null, "max")+ "°C";
                                 this.publishProgress(75);
                             }
 
@@ -155,7 +155,7 @@ public class WeatherForecast extends Activity {
                 }
             }
 
-            Log.i(ACTIVITY_NAME, "Downloading images");
+            Log.i(ACTIVITY_NAME, "Get image from the website");
             return bitmap;
         }
 
@@ -170,7 +170,7 @@ public class WeatherForecast extends Activity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            Log.i(ACTIVITY_NAME, "Get the image from local directory");
+            Log.i(ACTIVITY_NAME, "Read the image from local directory");
             return bm;
         }
 
