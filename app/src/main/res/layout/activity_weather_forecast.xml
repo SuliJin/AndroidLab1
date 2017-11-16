@@ -32,7 +32,6 @@
         android:layout_alignBaseline="@+id/currentTemperatureLabel"
         android:text="@string/currentTemperature"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-        />
 
     <TextView
         android:id="@+id/minTemperatureLabel"
@@ -53,7 +52,6 @@
         android:layout_toEndOf="@+id/minTemperatureLabel"
         android:text="@string/minTemperature"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-    />
 
     <TextView
         android:id="@+id/maxTemperatureLabel"
@@ -73,8 +71,6 @@
         android:layout_toEndOf="@+id/maxTemperatureLabel"
         android:text="@string/maxTemperature"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-    />
 
     <ProgressBar
         android:id="@+id/progressBar"
