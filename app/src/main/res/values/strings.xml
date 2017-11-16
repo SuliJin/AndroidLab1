@@ -26,4 +26,5 @@
     <string name="idTextView">ID = </string>
     <string name="messageTextView">MessageHere</string>
     <string name="deleteMessageButton">DELETE THIS MESSAGE</string>
+    
 </resources>
