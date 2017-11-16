@@ -93,11 +93,11 @@ public class WeatherForecast extends Activity {
 
                         case XmlPullParser.START_TAG:
                             if (name.equalsIgnoreCase("temperature")) {
-                                currentTemperature = "Current Temperature: " + parser.getAttributeValue(null, "value") + "°C";
+                                currentTemperature = parser.getAttributeValue(null, "value") + "°C";
                                 this.publishProgress(25);
-                                minTemperature = "Minimum Temperature: " + parser.getAttributeValue(null, "min")+ "°C";
+                                minTemperature =parser.getAttributeValue(null, "min")+ "°C";
                                 this.publishProgress(50);
-                                maxTemperature = "Maximum Temperature: " + parser.getAttributeValue(null, "max")+ "°C";
+                                maxTemperature =parser.getAttributeValue(null, "max")+ "°C";
                                 this.publishProgress(75);
                             }
 
@@ -118,6 +118,7 @@ public class WeatherForecast extends Activity {
                 if (fileExistance(iconName + ".png")) {
                     bitmap = this.readImage(iconName + ".png");
                 }
+                
                 else {
                     String bitmapURL = "http://openweathermap.org/img/w/" + iconName + ".png";
                     bitmap = getImage(new URL(bitmapURL));
@@ -183,7 +184,7 @@ public class WeatherForecast extends Activity {
             File file = getBaseContext().getFileStreamPath(fname);
             return file.exists();
         }
-        
+
         @Override
         protected void onPostExecute(String result) {
             curTempTextView.setText(this.currentTemperature);
