@@ -184,7 +184,6 @@ public class WeatherForecast extends Activity {
             return file.exists();
         }
         
-
         @Override
         protected void onPostExecute(String result) {
             curTempTextView.setText(this.currentTemperature);
