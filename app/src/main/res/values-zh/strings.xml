@@ -17,4 +17,9 @@
     <string name="cancel">否</string>
     <string name="Button2Text">开始聊天</string>
     <string name="sendButton">发送</string>
+    <string name="weatherButton">天气预报</string>
+    <string name="currentTemperatureLabel">当前温度: </string>
+    <string name="minTemperatureLabel">最低温度: </string>
+    <string name="maxTemperatureLabel">最高温度: </string>
+
 </resources>
