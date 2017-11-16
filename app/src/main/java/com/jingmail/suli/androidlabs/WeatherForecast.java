@@ -183,6 +183,7 @@ public class WeatherForecast extends Activity {
             File file = getBaseContext().getFileStreamPath(fname);
             return file.exists();
         }
+        
 
         @Override
         protected void onPostExecute(String result) {
